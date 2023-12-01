@@ -1,0 +1,29 @@
+.footer_wrapper {
+    width: 100%;
+    height: 392px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.span {
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    filter: drop-shadow(0px 0px 1px #FFF);
+    background: linear-gradient(169deg, #F1F1F1 0%, #B69CE8 36.59%, #57E7D7 75.55%, #8987FD 92.46%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.border {
+    width: 100%;
+    height: 1px;
+    margin: 40px 0;
+    background: linear-gradient(90deg, #F1F1F1 0%, #B69CE8 18.06%, #D975FF 34.06%, #57E7D7 58.00%, #8987FD 100%);
+}

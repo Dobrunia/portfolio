@@ -1,0 +1,157 @@
+.wrapper {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    -webkit-transform: translate(-77px, 0);
+    transform: translate(-77px, 0);
+}
+
+.window {
+    width: 1220px;
+    height: 700px;
+    position: relative;
+    border-left: 1px solid #F1F1F1;
+    border-right: 1px solid #8987FD;
+}
+
+.social_media {
+    width: 154px;
+    height: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.social_media img {
+    transition: 0.2s linear;
+}
+
+.social_media img:hover {
+    transform: rotate(-20deg);
+    scale: 1.4;
+    cursor: pointer;
+}
+
+.social_media a:nth-child(2n) {
+    margin: 22px 0 !important;
+}
+
+.bracket1::before {
+    content: '< ';
+    filter: drop-shadow(0px 0px 10px #ff5900);
+    font-family: 'Inconsolata', monospace;
+    color: #F29766;
+    font-size: 30px;
+}
+
+.bracket2::after {
+    content: ' />';
+    filter: drop-shadow(0px 0px 10px #ff5900);
+    font-family: 'Inconsolata', monospace;
+    color: #F29766;
+    font-size: 30px;
+}
+
+.top_border {
+    display: flex;
+    height: 25px;
+    background: linear-gradient(90deg, #F1F1F1 0%, #B69CE8 12.22%, #D975FF 34.06%, #57E7D7 58.00%, #8987FD 81.21%);
+    box-shadow: 0px 0px 3px 0px #FFF;
+}
+
+.bottom_border {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, #F1F1F1 0%, #B69CE8 12.22%, #D975FF 34.06%, #57E7D7 58.00%, #8987FD 81.21%);
+}
+
+.block {
+    margin-top: 5px;
+    margin-left: 7px;
+    width: 15px;
+    height: 15px;
+    background: #0B0E17;
+}
+
+.text {
+    color: #2DC6C1;
+    filter: drop-shadow(0px 0px 5px #00fff7);
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.pos1 {
+    position: absolute;
+    top: 100px;
+    left: 65px;
+}
+
+.pos2 {
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+}
+
+.pos3 {
+    position: absolute;
+    top: 258px;
+    left: 100px;
+}
+
+.pos4 {
+    position: absolute;
+    top: 338px;
+    right: 235px;
+}
+
+.surname {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 70px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #D976FE;
+}
+
+.surname span {
+    letter-spacing: -3.5px;
+    color: transparent;
+}
+
+.name {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 70px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #8987FD;
+}
+
+.monster {
+    position: absolute;
+    right: 203px;
+    animation-name: monster;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes monster {
+    0% {
+        top: 100px;
+    }
+
+    50% {
+        top: 200px;
+    }
+
+    100% {
+        top: 100px;
+    }
+}
